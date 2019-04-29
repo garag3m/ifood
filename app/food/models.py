@@ -1,3 +1,4 @@
+
 from django.db import models
 
 from app.core.models import CreateUpdateModel, UUIDUser
