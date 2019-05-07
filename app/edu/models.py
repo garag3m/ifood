@@ -20,19 +20,3 @@ class Student(CreateUpdateModel):
         verbose_name = 'aluno'
         verbose_name_plural = 'alunos'
 
-# User
-# - - - - - - - - - - - - - - - - - - -
-class User(CreateUpdateModel):
-
-    registration = models.CharField(max_length=100, verbose_name='Matrícula')
-    password = models.CharField(max_length=20, verbose_name='Senha')
-    name = models.CharField(max_length=100, verbose_name='Nome')
-    email = models.CharField(max_length=100, verbose_name='E-mail')
-    function = models.CharField(max_length=100, verbose_name='Tipo de Usuário')
-
-    def __str__(self):
-        return f'{self.name} ({self.registration})'
-
-    class Meta:
-        verbose_name = 'usuário'
-        verbose_name_plural = 'usuários'
